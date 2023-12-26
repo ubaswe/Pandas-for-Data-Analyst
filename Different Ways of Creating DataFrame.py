@@ -23,7 +23,6 @@ df=pd.DataFrame(climate_data)
 df
 
 
-
 #Using tuple list
 climate_data=[
     (1/1/2023,35,3,"rainy"),
@@ -46,6 +45,10 @@ climate_data = [
 df=pd.DataFrame(data=climate_data,columns=["Day","Temparature","weedspeed","Event"])
 df
 
+#using clipboard
+import pandas as pd
+df=pd.read_clipboard()
+df
 
 
 # In[2]:to print head rows
