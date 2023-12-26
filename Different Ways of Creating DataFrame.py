@@ -36,6 +36,18 @@ df
 
 
 
+#using list of dictionaries
+climate_data = [
+   {"Day":"1/1/2023","Temparature":35,"Windspeed":3,"Event":"rainy"},
+   {"Day":"1/2/2023","Temparature":36,"Windspeed":3,"Event":"rainy"},
+   {"Day":"1/3/2023","Temparature":37,"Windspeed":3,"Event":"rainy"},
+   {"Day":"1/4/2023","Temparature":38,"Windspeed":3,"Event":"rainy"}
+]
+df=pd.DataFrame(data=climate_data,columns=["Day","Temparature","weedspeed","Event"])
+df
+
+
+
 # In[2]:to print head rows
 df.head()
 
