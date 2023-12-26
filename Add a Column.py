@@ -15,6 +15,7 @@ df
 
 
 # In[11]:add a column named Percentage
+#add percentage.2
 
 
 df["Percentage"]=(df["Total"]/500*100).apply("{:.2f}%".format)
