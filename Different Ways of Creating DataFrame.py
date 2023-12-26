@@ -1,18 +1,18 @@
-#import pandas and read csv file 
+#Using csv file
 import pandas as pd
 df=pd.read_csv("data.csv")
 df
 
 
 
-#import pandas and read excel file
+#Using excel file
 import pandas as pd
 df=pd.read_excel("climate.xlsx","Sheet1")
 df
 
 
 
-#import pandas and read dictionary file
+#Using dictionary
 climate_data ={
     "Day":["1/1/2023","1/2/2023","1/3/2023","1/4/2023"],
     "Temparature":[35,36,37,38],
@@ -36,7 +36,7 @@ df
 
 
 
-#using list of dictionaries
+#Using list of dictionaries
 climate_data = [
    {"Day":"1/1/2023","Temparature":35,"Windspeed":3,"Event":"rainy"},
    {"Day":"1/2/2023","Temparature":36,"Windspeed":3,"Event":"rainy"},
