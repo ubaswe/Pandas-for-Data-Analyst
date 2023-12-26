@@ -3,10 +3,14 @@ import pandas as pd
 df=pd.read_csv("data.csv")
 df
 
+
+
 #import pandas and read excel file
 import pandas as pd
 df=pd.read_excel("climate.xlsx","Sheet1")
 df
+
+
 
 #import pandas and read dictionary file
 climate_data ={
@@ -20,6 +24,15 @@ df
 
 
 
+#Using tuple list
+climate_data=[
+    (1/1/2023,35,3,"rainy"),
+    (1/2/2023,35,3,"sunny"),
+    (1/3/2023,35,3,"rainy"),
+    (1/4/2023,35,3,"sunny")
+]
+df=pd.DataFrame(data=climate_data,columns=["Day","Temparature","weedspeed","Event"])
+df
 
 
 
